@@ -1,8 +1,17 @@
+
+.Header{
+    margin-inline: auto;
+    max-width: 1280px;
+    padding: 0px 25px;
+    width: 100%;
+}
+
 .wrapperHeader {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 20px 25px;
     border-bottom: 1px solid var(--graybg);
 }
 
@@ -15,24 +24,29 @@
 .ulMenu {
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 .navLi a {
     color: var(--orange);
     font-size: 16px;
     border: 1px solid var(--orange);
-    padding: 10px 10px;
+    padding: 10px;
+    transition: all .3s ease-in-out;
     border-radius: 10px;
 }
 
 .navLi a:hover {
-    color: var(--black);
+    color: var(--white);
+    background-color: var(--orange);
 }
 
 @media (max-width: 768px) {
     .wrapperHeader {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .navHeader{
+        display: none;
     }
 }

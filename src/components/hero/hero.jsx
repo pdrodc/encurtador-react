@@ -7,14 +7,12 @@ const Hero = () => {
       <div className={styles.wrapperHero}>
         <div className={styles.heroContent}>
           <h1>Encurte seus links com facilidade aqui na EncurtaLinks.</h1>
-          <p>
-            Crie links curtos e compartilhe com facilidade, e dê mais
-            visibilidade ao seu site.
+          <p> Crie links curtos e compartilhe com facilidade, e dê mais visibilidade ao seu site.
           </p>
           <a href="">Comece aqui</a>
         </div>
         <div className={styles.heroImg}>
-          <img src={ImgHero} alt="" />
+          <img src="/pc.png" alt="" />
         </div>
         
       </div>

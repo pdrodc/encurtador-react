@@ -7,8 +7,7 @@ const Header = () => {
                 <div className={styles.logo}>EncurtaLinks</div>
                 <nav className={styles.navHeader}>
                     <ul className={styles.ulMenu}>
-                        <li className={styles.navLi}><a href="">Comece aqui</a></li>
-                        <li className={styles.navLi}><a href="">Criar Conta</a></li>
+                        <li className={styles.navLi}><a href="#encurtar">Comece aqui</a></li>
                     </ul>
                 </nav>
             </div>

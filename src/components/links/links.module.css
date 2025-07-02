@@ -1,3 +1,7 @@
+.Links{
+    height: 50vh;
+}
+
 .wrapperLinks {
     display: flex;
     flex-direction: column;
@@ -21,10 +25,16 @@
     display: flex;
     justify-content: center;
     width: 500px;
+    font-size: 18px;
     height: 60px;
     padding: 15px 10px;
     border-radius: 10px;
-    border: 1px solid var(--graybg);
+    border: 2px solid var(--graybg);
+}
+
+.linksInput input:focus {
+    border-color: orange;
+    outline: none;
 }
 
 .linksInput input::placeholder{
@@ -51,10 +61,109 @@
     transition: all 0.3s ease-in-out;
 }
 
+.resultContainer {
+  max-width: 1000px;
+  margin-top: 20px;
+  width: 100%;
+  padding: 0px 20px;
+}
+
+.shortenedUrlContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.shortenedUrlInput {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f8fafc;
+  color: #2d3748;
+  outline: none;
+}
+
+.copyButton {
+  padding: 12px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  min-width: 48px;
+  height: 48px;
+}
+
+.copyButton:hover {
+  background-color: rgb(204, 138, 15);
+  transform: translateY(-1px);
+}
+
+.copyButton:active {
+  transform: translateY(0);
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.notification.success {
+  background-color: #48bb78;
+  color: white;
+  border: 1px solid #38a169;
+}
+
+.notification.error {
+  background-color: #f56565;
+  color: white;
+  border: 1px solid #e53e3e;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.linksInput button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.linksInput input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background-color: #f7fafc;
+}
+
 
 @media (max-width: 768px) {
     .linksInput input{
-        width: 150px;
+        width: 100%;
+    }
+
+    .linksContent h2{
+        font-size: 24px;
     }
     .linksInput button{
         width: 100px;
