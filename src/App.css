@@ -1,0 +1,29 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --red: #ff0000;
+    --orange: #ff7f00;
+    --blue: #0000ff;
+    --yellow: #ffff00;
+    --green: #0d6d0d;
+    --graybg: #dddddd;
+    --gray: #808080;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
