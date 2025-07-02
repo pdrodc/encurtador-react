@@ -19,13 +19,14 @@
     display: flex;
     justify-content: center;
     gap: 5px;
+    padding: 0px 15px;
 }
 
 .linksInput input{
     display: flex;
     justify-content: center;
     width: 500px;
-    font-size: 18px;
+    font-size: 17px;
     height: 60px;
     padding: 15px 10px;
     border-radius: 10px;
