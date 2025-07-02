@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/:shortUrl",
+      "destination": "https://encurtador-url-plf9.onrender.com/:shortUrl"
+    }
+  ]
+}
